@@ -1,5 +1,8 @@
 FROM quay.io/letsencrypt/letsencrypt
-MAINTAINER kvaps <kvapss@gmail.com>
+MAINTAINER Martin Venuš <martin.venus@gmail.com>
+
+ENV DEBIAN_FRONTEND noninteractive
+ENV TERM xterm
 
 RUN apt-get update && apt-get -y install docker.io
 
